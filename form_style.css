@@ -1,0 +1,64 @@
+body {
+	background-color: Black;
+	}
+
+h1 {
+	font-size: 2.0em;
+	font-family: Caliber;
+	color: purple;
+}
+h2 {
+	font-size: 2.0em;
+	font-family: Caliber;
+	color: yellow;
+}
+
+p, legend {
+	color: white;
+}
+
+/*code for the indicator a required field with a red asterisk after the label*/
+.indicator:after { content:" *"; color: red;
+}
+
+/*transition to fit on a smart phone*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+
+/*copy code as per request*/
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+form {
+border: 2px solid #c6c7cc;
+border-radius: 5px;
+font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+overflow: hidden;
+width: 400px;
+}
+label {
+display: block;
+font-weight: bold;
+margin-bottom: 20px;
+}
+input {
+background: #fff;
+border: 1px solid #c6c7cc;
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+padding: 6px;
+margin-top: 6px;
+width: 100%;
+}
+button {
+background: linear-gradient(#49708f, #293f50);
+border: 2;
+cursor: pointer;
+font-weight: bold;
+float: left;
+padding: 8px 16px;
+}
+
+}
