@@ -62,3 +62,41 @@ padding: 8px 16px;
 }
 
 }
+/*week 3 assignment*/
+
+/*2 descendant selector*/
+
+div p {
+	color: pink;
+}
+div b{
+	color: green;
+}
+
+/*the child selectors*/
+div.fine > b{
+	color: red;
+	font-size: 1.5em;
+}
+
+div.information > p{
+	color: white;
+}
+
+/*the sibling selector*/
+div.adult h2 ~ p {
+color: blue;
+}
+
+
+/*the adjacent sibling selector*/
+
+div.fees h2 + p {
+	color: orange;
+} 
+
+
+
+
+
+
