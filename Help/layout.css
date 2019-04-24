@@ -1,0 +1,425 @@
+body {
+	font: 14px/1.4 Georgia, sans-serif;
+	color: #286542;
+	margin: 0;
+}
+
+header {
+	font: 40px/2 Impact, sans-serif;
+	color: #286542;
+	background-color: white;
+	text-shadow: 3px 3px #ABB2B9;
+	text-align: center;
+	padding-top: 0%;
+}
+ 
+header img {
+	width: 100%;
+} 
+ /*nav for homeless page*/
+
+nav{
+	background-color: white;
+	font-family: georgia;
+	text-align: center;
+	font-size: 25px;
+	color: #286542;
+
+}
+nav a{
+	text-decoration: none; /*gets rid of the link line*/
+    color: black;
+	font-family: georgia;
+	color: #286542;
+}
+nav ul {
+	list-style-type: none; /*remove bullet*/
+}
+
+nav li {
+	display: inline; /* have list items go across */
+	padding-right: 20px;
+}
+
+#wrap {
+	width: 85%;
+	margin: 0 auto;
+	background: #fff;
+	overflow: auto;
+	padding: 10px;
+}
+
+#wrap h1 {
+	font: 40px/2 Impact, sans-serif;
+color: #286542;
+	padding-left: 1%;
+}
+
+h1{
+	padding-left: 1%;
+}
+
+h2 {
+	font: 25px/1.2 Impact, sans-serif;
+color: #286542;
+}
+
+div{
+	padding-left: 5%;
+}
+
+/*FLIP CARD*/
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: white;
+  color: red;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #286542;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/*end FLIP CARD*/
+
+
+
+footer {
+	text-align: center;
+	background-color: #286542;
+	padding-bottom: 1%;
+
+}
+
+footer li {
+	display: inline;
+	padding: 3.2%;
+}
+
+footer a {
+	font: 30px/6 Impact, sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+
+section {
+	float: left;
+	width: 46%;
+	border: 1px solid black;
+	border-radius: 25px;
+	padding: 20px 10px 10px 10px;
+}
+
+section img {
+	float: left;
+	padding-right: 1%;
+	padding-bottom: 1%;
+}
+
+aside {
+	float: right;
+	width: 46%;
+	border: 1px solid black;
+	border-radius: 25px;
+	padding: 20px 10px 10px 10px;
+}
+
+aside img {
+	float: left;
+	padding-right: 1%;
+	padding-bottom: 1%;
+}
+
+
+/* Copy code from CCS Menu 1 */
+
+#menu, #menu ul {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+
+#menu {
+    width: 600px;
+    margin: 60px auto;
+    border: 1px solid #222;
+    background-color: #006400;
+    background-image: linear-gradient(#444, #111);
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #777;
+}
+
+#menu:before,
+#menu:after {
+    content: "";
+    display: table;
+}
+
+#menu:after {
+    clear: both;
+}
+
+#menu {
+    zoom:1;
+}
+
+/* list elements */
+
+#menu li {
+    float: left;
+    border-right: 1px solid #222;
+    box-shadow: 1px 0 0 #444;
+    position: relative;
+}
+
+#menu a {
+    float: left;
+    padding: 12px 30px;
+    color: white;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a {
+    color: #fafafa;
+}
+
+
+
+/* Handle the animation of the submenus */
+
+#menu ul {
+    margin: 20px 0 0 0;
+    _margin: 0; /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;    
+    background: #444;   
+    background: linear-gradient(#444, #111);
+    box-shadow: 0 -1px 0 rgba(255,255,255,.3);  
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+#menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+#menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    _margin: 0; /*IE6 only*/
+    box-shadow: -1px 0 0 rgba(255,255,255,.3);      
+}
+
+#menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+    _line-height: 0; /*IE6 only*/
+    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+}
+
+#menu ul li:last-child {   
+    box-shadow: none;    
+}
+
+#menu ul a {    
+    padding: 10px;
+    width: 130px;
+    _height: 10px; /*IE6 only*/
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+    color: white; /* change the color for dropdown items */
+}
+
+#menu ul a:hover {
+    background-color: #0186ba;
+    background-image: linear-gradient(#04acec, #0186ba);
+}
+
+/* Handle the First and Last Child */
+#menu ul li:first-child > a {
+    border-radius: 3px 3px 0 0;
+}
+
+#menu ul li:first-child > a:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #444;
+}
+
+#menu ul ul li:first-child a:after {
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0; 
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #3b3b3b;
+}
+
+#menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+}
+
+#menu ul ul li:first-child a:hover:after {
+    border-right-color: #0299d3; 
+    border-bottom-color: transparent;   
+}
+
+#menu ul li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+
+form{
+	  margin: 5px 50px 15px 50px;
+}
+/*code for the indicator a required field with a red asterisk after the label*/
+.indicator:after { content:" *"; color: red;
+}
+p.red{
+	color: Red;
+}
+/*homeless page grid*/
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+        grid-template-columns: repeat(4, [col] 150px ) ;
+        grid-template-rows: repeat(2, [row] auto  );
+        background-color: white;
+        /*color: #286542;*/
+    }
+
+    .box {
+        background-color: #286542;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+
+    }
+
+    .box .box {
+        background-color: #286542;
+        color: white;
+		font-size: 20px;
+    }
+
+    .a {
+        grid-column: col / span 2;
+        grid-row: row;
+    }
+
+    .b {
+        grid-column: col 3 / span 2;
+        grid-row: row;
+    }
+
+    .c {
+        grid-column: col / span 2;
+        grid-row: row 2;
+		padding: 10px;
+		background-color: white;
+		
+    }
+
+    .d{
+        grid-column: col 3 / span 2;
+        grid-row: row 2;
+        display: grid;
+    grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .e {
+        grid-column: 1 / 3;
+        grid-row: 1;
+		
+    }
+
+    .f {
+        grid-column: 1;
+        grid-row: 2;
+		color: white;
+		
+    }
+
+    .g {
+        grid-column: 2;
+        grid-row: 2;
+		
+    }
+/*grid*/	
+	* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
+	
+	
